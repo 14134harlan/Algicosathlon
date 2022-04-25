@@ -329,7 +329,7 @@ class MarbleDrop{
                 this.marbles[i].detectCollision(this.obstacles[p])
             }
             if(this.marbles[i].y+10>=this.y+380){
-                if (this.marbles[i].x<=this.x+145+this.additionalChance){
+                if (this.marbles[i].x<=this.x+145+this.additionalChance && this.tower.size<1000000){
                     this.tower.size *= 2
                 }
                 else{
